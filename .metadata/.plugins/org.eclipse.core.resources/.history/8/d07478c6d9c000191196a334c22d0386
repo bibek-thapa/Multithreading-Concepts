@@ -1,0 +1,58 @@
+package com.example;
+
+public class Order implements Comparable<Order>{
+	
+	private int id;
+	private String name;
+	private Long price;
+	
+	Order(int id, Long price , String name)
+	{
+		this.id = id;
+		this.price = price ;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Long getPrice() {
+		return price;
+	}
+
+	public void setPrice(Long price) {
+		this.price = price;
+	}
+
+	@Override
+	public int compareTo(Order o1) {
+		return this.id > o1.id ? 1 :(this.id < o1.id ? -1 : 0);
+	}
+
+	@Override
+	public String toString() {
+		return String.valueOf(id);
+	}
+	
+	
+	
+	
+	
+
+}

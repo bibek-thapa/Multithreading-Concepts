@@ -1,0 +1,41 @@
+package com.example;
+
+public class Order {
+	
+	private int id;
+	private String price ,name;
+	
+	Order(int id, String price , String name)
+	{
+		this.id = id;
+		this.price = price ;
+		this.name = name;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public String getPrice() {
+		return price;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setPrice(String price) {
+		this.price = price;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+
+}

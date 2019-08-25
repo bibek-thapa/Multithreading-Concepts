@@ -1,0 +1,22 @@
+package com.example;
+
+import java.util.Date;
+
+public class Person implements Comparable<Person>{
+	   private String name;
+	   private int id;
+	   private Date dob;
+
+	    public Person(String name, int id, Date dob) {
+	        this.name = name;
+	        this.id = id;
+	        this.dob = dob;
+	    }
+
+		@Override
+		public int compareTo(Person p) {
+			return this.id - p.id;
+		}
+	    
+	    
+}    

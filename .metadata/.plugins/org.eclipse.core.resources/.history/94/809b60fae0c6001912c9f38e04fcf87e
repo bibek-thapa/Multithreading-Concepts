@@ -1,0 +1,11 @@
+package com.example;
+
+public class SemaphoreTask  implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

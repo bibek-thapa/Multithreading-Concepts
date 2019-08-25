@@ -1,0 +1,42 @@
+package com.example;
+
+import java.util.concurrent.Semaphore;
+
+class Shared
+{
+	static int count = 0 ;
+}
+
+class MyThread extends Thread
+{
+	Semaphore sem;
+	String threadName;
+	
+	public MyThread(Semaphore sem, String threadName) 
+	{
+		super(threadName);
+		this.sem = sem;
+		this.threadName = threadName;
+	}
+
+	@Override
+	public void run() {
+		
+		
+	}
+	
+	
+
+}
+
+public class SemaphoreBasics {
+	
+	public static void main(String[] args) 
+	{
+		Semaphore sem = new Semaphore(1);
+		
+		MyThread t1 = new MyThread(sem , "A");
+		
+	}
+
+}

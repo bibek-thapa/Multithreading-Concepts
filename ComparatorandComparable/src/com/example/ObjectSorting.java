@@ -1,0 +1,42 @@
+package com.example;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class ObjectSorting {
+	
+	
+	public static void main(String args[]) 
+	{
+		
+		 Order ord1 = new Order(101,2000l, "Sony");
+	        Order ord2 = new Order(102,4000l, "Hitachi");
+	        Order ord3 = new Order(103,6000l, "Philips");
+	      
+	        //putting Objects into Collection to sort
+	        List<Order> orders = new ArrayList<>();
+	        orders.add(ord3);
+	        orders.add(ord1);
+	        orders.add(ord2);
+	        
+	        Collections.sort(orders, Collections.reverseOrder());
+	        System.out.println(orders);
+	        
+	        Collections.sort(orders , new Order.OrderByAmount());
+	        System.out.println(orders);
+	        
+	        
+	        Collections.sort(orders , new Order.OrderByName());
+	        System.out.println(orders);
+	        
+	        
+	        
+	        
+	        
+		
+		
+		
+	}
+
+}

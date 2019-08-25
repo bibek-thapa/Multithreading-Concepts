@@ -1,0 +1,28 @@
+package com.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ObjectSorting {
+	
+	
+	public static void main(String args[]) 
+	{
+		
+		 Order ord1 = new Order(101,2000, "Sony");
+	        Order ord2 = new Order(102,4000, "Hitachi");
+	        Order ord3 = new Order(103,6000, "Philips");
+	      
+	        //putting Objects into Collection to sort
+	        List<Order> orders = new ArrayList<Order>();
+	        orders.add(ord3);
+	        orders.add(ord1);
+	        orders.add(ord2);
+	        
+	        
+		
+		
+		
+	}
+
+}

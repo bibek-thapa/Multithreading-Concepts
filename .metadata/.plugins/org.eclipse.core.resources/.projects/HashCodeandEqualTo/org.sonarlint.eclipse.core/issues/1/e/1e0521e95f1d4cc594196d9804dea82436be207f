@@ -1,0 +1,8 @@
+
+usquid:CallToDeprecatedMethod",Remove this use of "Date"; it is deprecated.(ç¥´ûÿÿÿÿ8÷îùÉ-H\RMINORZ
+CODE_SMELL
+usquid:CallToDeprecatedMethod",Remove this use of "Date"; it is deprecated.(éú•ºıÿÿÿÿ8÷îùÉ-H]RMINORZ
+CODE_SMELL
+psquid:CallToDeprecatedMethod",Remove this use of "Date"; it is deprecated.(Æ¦‡¤8÷îùÉ-H^RMINORZ
+CODE_SMELL
+«squid:S2159"zRemove this call to "equals"; comparisons against null always return false; consider using '== null' to check for nullity.(¢ÉËŠùÿÿÿÿ8ğ»şùÉ-H_RMAJORZBUG

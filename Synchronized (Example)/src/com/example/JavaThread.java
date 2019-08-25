@@ -1,0 +1,30 @@
+package com.example;
+
+import java.util.concurrent.TimeUnit;
+
+public class JavaThread {
+	
+	private static volatile boolean stopRequested;
+	
+	
+	
+	public static void main(String[] args) throws InterruptedException 
+	{
+		
+		
+		
+		Thread backgroundThread = new Thread(()->
+		{
+			int i = 0 ; 
+			while(!stopRequested) 		
+				System.out.println(i);
+				i++;
+				
+					});
+		
+		backgroundThread.start();
+		TimeUnit.SECONDS.sleep(1);
+		stopRequested = true;
+	}
+
+}
